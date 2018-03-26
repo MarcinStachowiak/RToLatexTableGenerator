@@ -25,7 +25,7 @@ draw_tables_for_search_result(bib.list)
 5. Add the following lines to the place where you want to generate the tables:
 ```
 <<echo=F,results="asis",cache=FALSE>>=
-source('rscripts/table_generator.r')
+source('Rscripts/table_generator.r')
 bib.list <- convert_bibtex_to_dataframes(bib)
 draw_tables_for_data_extraction(bib.list)
 @
