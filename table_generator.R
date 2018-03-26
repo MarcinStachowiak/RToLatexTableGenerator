@@ -161,8 +161,3 @@ draw_tables_for_data_extraction <- function(bib.list) {
     }
   }
 }
-
-
-bib.list <- convert_bibtex_to_dataframes(bib)
-draw_tables_for_search_result(bib.list)
-draw_tables_for_data_extraction(bib.list)

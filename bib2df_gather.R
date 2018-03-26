@@ -3,7 +3,7 @@
 #' @importFrom dplyr bind_rows
 #' @importFrom dplyr as_data_frame
 #' @importFrom stats complete.cases
-library(dplyr,verbose=FALSE)
+library(dplyr,verbose=FALSE,warn.conflicts = FALSE)
 bib2df_gather <- function(bib) {
   from <- which(!is.na(str_match(bib, "^@")))
   to  <- c(from[-1], length(bib))
