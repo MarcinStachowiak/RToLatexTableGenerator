@@ -121,7 +121,8 @@ draw_tables_for_search_result <- function(bib.list) {
       include.rownames = TRUE,
       include.colnames = FALSE,
       sanitize.rownames.function = italic,
-      hline.after = hlines
+      hline.after = hlines,
+      table.placement='H'
     )
   }
 }
@@ -156,7 +157,8 @@ draw_tables_for_data_extraction <- function(bib.list) {
         include.rownames = TRUE,
         include.colnames = FALSE,
         sanitize.rownames.function = italic,
-        hline.after = hlines
+        hline.after = hlines,
+        table.placement='H'
       )
     }
   }
