@@ -30,6 +30,7 @@ bib.list <- convert_bibtex_to_dataframes(bib)
 draw_tables_for_data_extraction(bib.list)
 @
 ```
+6. In file table_generator.r set the path to your bib file.
 # You can edit the table contents directly in the .bib file
 Below is an exemplary bibtex file containing information on the basis of which the tables will be generated:
 ```
