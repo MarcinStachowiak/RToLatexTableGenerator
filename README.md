@@ -1,7 +1,9 @@
 # RToLatexTableGenerator
 
 # Preconditions
-Add the following commands to your .Rtex document.
+1. Put all files from this repository in your sharelatex account in the Rscripts folder.
+2. Rename an extension of the protocol file from .tex to .Rtex
+3. Add the following commands to the top of your document:
 ```
 \usepackage{array}
 \usepackage{url}
@@ -11,24 +13,25 @@ Add the following commands to your .Rtex document.
 ```
 
 # Generate Search Result Tables
-First steps:
+4. Add the following lines to the place where you want to generate the tables:
 ```
 <<echo=F,results="asis",cache=FALSE>>=
-source('table_generator.r')
+source('Rscripts/table_generator.r')
 bib.list <- convert_bibtex_to_dataframes(bib)
 draw_tables_for_search_result(bib.list)
 @
 ```
 # Generate Data Extraction Tables
-First steps:
+5. Add the following lines to the place where you want to generate the tables:
 ```
 <<echo=F,results="asis",cache=FALSE>>=
-source('table_generator.r')
+source('rscripts/table_generator.r')
 bib.list <- convert_bibtex_to_dataframes(bib)
 draw_tables_for_data_extraction(bib.list)
 @
 ```
 # You can edit the table contents directly in the .bib file
+Below is an exemplary bibtex file containing information on the basis of which the tables will be generated:
 ```
 @ARTICLE{abc,
   author={M. Choetkiertikul and H. K. Dam and T. Tran and A. Ghose and J. Grundy}, 
