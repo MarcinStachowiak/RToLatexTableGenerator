@@ -1,5 +1,5 @@
 #' ---
-#' title: "RToLatexTABLEGENERATOR"
+#' title: "RToLatexTableGenerator"
 #' author: "Marcin STachowiak"
 #' date: "March 24, 2018"
 #' ---
