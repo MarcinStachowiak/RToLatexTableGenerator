@@ -6,7 +6,7 @@
 #' 
 options(warn = -1)
 library(xtable)
-source('bib2df.r')
+source('bib2df.R')
 source('bib2df_read.R')
 source('bib2df_gather.R')
 source('bib2df_tidy.R')
