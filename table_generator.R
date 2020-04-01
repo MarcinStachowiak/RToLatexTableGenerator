@@ -7,9 +7,9 @@
 options(warn = -1)
 library(xtable)
 source('bib2df.r')
-source('bib2df_read.r')
-source('bib2df_gather.r')
-source('bib2df_tidy.r')
+source('bib2df_read.R')
+source('bib2df_gather.R')
+source('bib2df_tidy.R')
 
 a = bib2df('test.bib')
 options(xtable.floating = FALSE)
